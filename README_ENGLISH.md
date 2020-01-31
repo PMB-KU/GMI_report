@@ -4,7 +4,7 @@ I comfirmed whether tools work or not by SRR9974606. This files were generated b
 Used environment is docker image build from chip-env/Dockerfile.
 
 
-## Bam files from GMI do not have BAM format
+## Bam files from GMI are not correct BAM format
 
 First, I executed `samtools sort` and `samtools index` commands for bam files by below script.
 
