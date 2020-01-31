@@ -41,12 +41,16 @@ The file '105607_GCCAAT_HWMLYBGXC_1_20200114B_20200114_sorted.bam' does not have
 
 `bamCoverage` commands worked for SRR9974606 and sorted bam and bigwig were visualized by IGV(fig. 1).
 
+---
+
 <figure>
     <img src="2020-02-01-00-28-17.png", width=, height=>
     <figcaption>
-        <b>Image of sorted bam and bigwig visualized by IGV</b><br>
+        <b>Fig.1 Image of sorted bam and bigwig visualized by IGV</b><br>
     </figcaption>
 </figure>
+
+---
 
 To confirm bam format, I executed `samtools view` command.
 
