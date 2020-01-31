@@ -26,8 +26,9 @@ done
 
 # bam2bigwig
 
-for file in `ls *_sorted.bam`; do
-    bamCoverage --bam -o ${$file%.bam}.bw -of --bigwig 
+for file in `ls *.bam`; do
+    echo $file
+    bamCoverage -b $file -o ${file%.bam}.bw -of bigwig
 done;
 ```
 
