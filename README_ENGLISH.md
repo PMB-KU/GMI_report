@@ -40,7 +40,7 @@ Below error occurred, so maybe bam files are not correct.
 The file '105607_GCCAAT_HWMLYBGXC_1_20200114B_20200114_sorted.bam' does not have BAM or CRAM format
 ```
 
-`bamCoverage` commands worked for SRR9974606 and sorted bam and bigwig were visualized by IGV(fig. 1).
+`bamCoverage` command worked for SRR9974606 and sorted bam and bigwig were visualized by IGV(fig. 1).
 
 ---
 
@@ -65,5 +65,5 @@ As a result, bam files from GMI does not have information about location, mappin
 
 ## Requests
 
-If possible, I would like GMI to sent fastq files. Using gz compression, maybe size can be twice as big as bam files.  
-if not possible, please sent correct bam fils.
+If possible, I would like GMI to send fastq files. Using gz compression, maybe size can be twice as big as bam files.  
+if not possible, please send correct bam fils.
