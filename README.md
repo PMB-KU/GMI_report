@@ -1,6 +1,6 @@
 # Report about bam file from GMI
 
-ツールが正常に動いているかどうかは、SRR9974606を用いて確認した。本ファイルはpipeline.shを用いて作成した。reference genomeとしてJGI5のゲノムを使用した。
+ツールが正常に動いているかどうかは、SRR9974606を用いて確認した。本ファイルはpipeline.shを用いて作成した。reference genomeとしてJGI5のゲノムを使用した。環境は添付のchip-env内のDockerfileをbuildしたdocker imageを使用した。
 
 ## GMIのbamファイルは正常なbamファイルではない
 
@@ -31,6 +31,12 @@ for file in `ls *_sorted.bam`; do
 done;
 ```
 
+以下のエラーが起きたので、BAMファイルのフォーマットが異常であると考えられた。
+
+```bash
+The file '105607_GCCAAT_HWMLYBGXC_1_20200114B_20200114_sorted.bam' does not have BAM or CRAM format
+```
+
 SRR9974606では正常にbigwigに変換することができた。IGVでもsortされたbamファイル及びbigwigファイルは可視化できた（図. 1）。
 
 <figure>
@@ -39,12 +45,6 @@ SRR9974606では正常にbigwigに変換することができた。IGVでもsort
         <b>SRR9974606のbam及びbigwigファイルのIGVによる可視化</b><br>
     </figcaption>
 </figure>
-
-以下のエラーが起きたので、BAMファイルのフォーマットが異常であると考えられた。
-
-```bash
-The file '105607_GCCAAT_HWMLYBGXC_1_20200114B_20200114_sorted.bam' does not have BAM or CRAM format
-```
 
 そこで、samtoolsを用いてBAMの中身を確認した。
 
